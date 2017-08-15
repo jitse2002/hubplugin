@@ -1,0 +1,5 @@
+main: be.jitsedev.lobby.Kernel
+name: lobby
+description: niks
+version: 0.0.1
+author: jitse2002

@@ -9,7 +9,7 @@ public class Kernel extends JavaPlugin {
 
     private static Kernel instance;
 
-    public void onEnabel(){
+    public void onEnable(){
 
         instance = this;
 

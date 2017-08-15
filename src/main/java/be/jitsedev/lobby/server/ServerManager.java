@@ -1,6 +1,9 @@
 package be.jitsedev.lobby.server;
 
 import be.jitsedev.lobby.Kernel;
+import com.google.common.io.ByteArrayDataOutput;
+import com.google.common.io.ByteStreams;
+import org.bukkit.entity.Player;
 
 public class ServerManager {
 
@@ -36,6 +39,14 @@ public class ServerManager {
         }
 
             this.debug = true;
+
+    }
+
+    public void connectPlayerToServer(Player player, String servername){
+
+        ByteArrayDataOutput out = ByteStreams.newDataOutput();
+        out.writeUTF("connect");
+        out.writeUTF(servername);
 
     }
 
